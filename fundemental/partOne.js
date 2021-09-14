@@ -27,27 +27,44 @@ console.log("hello");
 
 // BASIC OPERATORS
 
+// const now = 2040
+// const ageDaniel = now - 1994
+// const ageJackie = now - 2020
+// console.log(ageDaniel, ageJackie);
+
+// console.log(ageDaniel * 2, ageDaniel / 10, 2 ** 3);
+
+// const firstName = "daniel";
+// const lastName = 'Campo';
+// console.log(firstName + ' ' + lastName);
+
+// // Assignment operator
+// let x = 10 + 5 
+// x += 10 // x = x + 10 = 25
+// x *= 4  // x= x * 4 = 100
+// x ++ // x = x + 1
+// x -- // x = x - 1
+// console.log(x);
+
+// // Comparison Operators
+// console.log(ageDaniel > ageJackie);
+// console.log(ageJackie >= 21);
+
+// console.log(now - 1990 > now - 1994);
+
+//----------------------------------------------
+
+// OPERATOR PRECEDENCE
+
 const now = 2040
 const ageDaniel = now - 1994
 const ageJackie = now - 2020
-console.log(ageDaniel, ageJackie);
 
-console.log(ageDaniel * 2, ageDaniel / 10, 2 ** 3);
+// console.log(25 - 10 - 5);
 
-const firstName = "daniel";
-const lastName = 'Campo';
-console.log(firstName + ' ' + lastName);
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x,y);
 
-// Assignment operator
-let x = 10 + 5 
-x += 10 // x = x + 10 = 25
-x *= 4  // x= x * 4 = 100
-x ++ // x = x + 1
-x -- // x = x - 1
-console.log(x);
-
-// Comparison Operators
-console.log(ageDaniel > ageJackie);
-console.log(ageJackie >= 21);
-
-console.log(now - 1990 > now - 1994);
+averageAge = (ageDaniel + ageJackie) / 2
+console.log(ageDaniel, ageJackie, averageAge);
