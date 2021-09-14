@@ -56,15 +56,33 @@ console.log("hello");
 
 // OPERATOR PRECEDENCE
 
-const now = 2040
-const ageDaniel = now - 1994
-const ageJackie = now - 2020
+// const now = 2040
+// const ageDaniel = now - 1994
+// const ageJackie = now - 2020
 
 // console.log(25 - 10 - 5);
 
-let x, y;
-x = y = 25 - 10 - 5;
-console.log(x,y);
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x,y);
 
-averageAge = (ageDaniel + ageJackie) / 2
-console.log(ageDaniel, ageJackie, averageAge);
+// averageAge = (ageDaniel + ageJackie) / 2
+// console.log(ageDaniel, ageJackie, averageAge);
+
+
+//-------------------------------------------------
+
+// CODING CHALLENGE #1
+
+let markW = 78
+let markH= 1.69
+let johnW = 92
+let johnH = 1.95
+
+const markBMI = markW / markH ** 2 
+const johnBMI = johnW / johnH ** 2 
+const markHigherBMI = markBMI > johnBMI
+
+console.log(markBMI);
+console.log(johnBMI);
+console.log(markHigherBMI);
