@@ -115,21 +115,52 @@ console.log("hello");
 
 // TAKING DECISIONS: IF/ELSE
 
-const age = 12
+// const age = 12
 
-if(age >= 14){
-    console.log(`Jackie can start driving!`);
+// if(age >= 14){
+//     console.log(`Jackie can start driving!`);
+// }else{
+//     const yearsLeft = 15 - age
+//     console.log(`jackie is not old enough, shes got ${yearsLeft} years left!`);
+// }
+
+// let century;
+// const birthYear = 2012;
+// if(birthYear <= 2000){
+//      century = 20
+// }else{
+//     century = 21
+// }
+
+// console.log(century);
+
+//-----------------------------------------------------------
+
+
+// CODING CHALLENGE #2
+
+
+// let markW = 78
+// let markH= 1.69
+// let johnW = 92
+// let johnH = 1.95
+
+
+let markW = 95  
+let markH= 1.88
+let johnW = 85
+let johnH = 1.76
+
+
+const markBMI = markW / markH ** 2 
+const johnBMI = johnW / johnH ** 2 
+
+console.log(markBMI);
+console.log(johnBMI);
+
+if(markBMI > johnBMI){
+    console.log(`Mark's BMI is higher then Johns by ${markBMI - johnBMI}!`);
 }else{
-    const yearsLeft = 15 - age
-    console.log(`jackie is not old enough, shes got ${yearsLeft} years left!`);
-}
+    console.log(`John's BMI is higher then Marks by ${johnBMI - markBMI}!`);
+};
 
-let century;
-const birthYear = 2012;
-if(birthYear <= 2000){
-     century = 20
-}else{
-    century = 21
-}
-
-console.log(century);
