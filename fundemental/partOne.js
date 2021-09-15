@@ -74,15 +74,40 @@ console.log("hello");
 
 // CODING CHALLENGE #1
 
-let markW = 78
-let markH= 1.69
-let johnW = 92
-let johnH = 1.95
+// let markW = 78
+// let markH= 1.69
+// let johnW = 92
+// let johnH = 1.95
 
-const markBMI = markW / markH ** 2 
-const johnBMI = johnW / johnH ** 2 
-const markHigherBMI = markBMI > johnBMI
+// const markBMI = markW / markH ** 2 
+// const johnBMI = johnW / johnH ** 2 
+// const markHigherBMI = markBMI > johnBMI
 
-console.log(markBMI);
-console.log(johnBMI);
-console.log(markHigherBMI);
+// console.log(markBMI);
+// console.log(johnBMI);
+// console.log(markHigherBMI);
+
+// ----------------------------------------------------
+
+
+// STRINGS AND TEMPLATE LITERALS
+
+const firstName = 'Daniel';
+const job = 'security officer';
+const birthYear = '1994'
+const year = '2021'
+
+const daniel = "I'am " + firstName + ' , a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(daniel);
+
+const danielNew = `I'm ${firstName}, a funny guy thats ${year - birthYear} years old ${job}`
+console.log(danielNew);
+
+console.log(' strings with \n\
+mutilple \n\
+string');
+
+console.log(`hello
+my 
+name is danie`);
+
