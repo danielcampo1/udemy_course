@@ -92,22 +92,44 @@ console.log("hello");
 
 // STRINGS AND TEMPLATE LITERALS
 
-const firstName = 'Daniel';
-const job = 'security officer';
-const birthYear = '1994'
-const year = '2021'
+// const firstName = 'Daniel';
+// const job = 'security officer';
+// const birthYear = '1994'
+// const year = '2021'
 
-const daniel = "I'am " + firstName + ' , a ' + (year - birthYear) + ' years old ' + job + '!';
-console.log(daniel);
+// const daniel = "I'am " + firstName + ' , a ' + (year - birthYear) + ' years old ' + job + '!';
+// console.log(daniel);
 
-const danielNew = `I'm ${firstName}, a funny guy thats ${year - birthYear} years old ${job}`
-console.log(danielNew);
+// const danielNew = `I'm ${firstName}, a funny guy thats ${year - birthYear} years old ${job}`
+// console.log(danielNew);
 
-console.log(' strings with \n\
-mutilple \n\
-string');
+// console.log(' strings with \n\
+// mutilple \n\
+// string');
 
-console.log(`hello
-my 
-name is danie`);
+// console.log(`hello
+// my 
+// name is danie`);
 
+//---------------------------------------------------------
+
+// TAKING DECISIONS: IF/ELSE
+
+const age = 12
+
+if(age >= 14){
+    console.log(`Jackie can start driving!`);
+}else{
+    const yearsLeft = 15 - age
+    console.log(`jackie is not old enough, shes got ${yearsLeft} years left!`);
+}
+
+let century;
+const birthYear = 2012;
+if(birthYear <= 2000){
+     century = 20
+}else{
+    century = 21
+}
+
+console.log(century);
