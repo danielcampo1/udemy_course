@@ -185,21 +185,37 @@ console.log("hello");
 
 //true and falsy
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('daniel'));
-console.log(Boolean({}));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('daniel'));
+// console.log(Boolean({}));
 
-const money = 23;
-if(money) {
-    console.log('dont spend it all');
-} else {
-    console.log('get a job');
-}
+// const money = 23;
+// if(money) {
+//     console.log('dont spend it all');
+// } else {
+//     console.log('get a job');
+// }
 
-let height;
-if(height){
-    console.log('YAY!!!!!!!!!!!!');
-}else{
-    console.log('not defined homie!');
-}
+// let height;
+// if(height){
+//     console.log('YAY!!!!!!!!!!!!');
+// }else{
+//     console.log('not defined homie!');
+// }
+
+//-----------------------------------------------------------
+
+//equality operators
+
+const age = 18;
+if(age === 18) console.log('congrats your an adult'); //strict equality operator
+if(age == '18') console.log('works also with a string'); //lose equality operator
+
+
+const favv = Number(prompt('what is your favorite number'))
+
+
+if(favv === 23) console.log("cool! 23 is the number");
+else if(favv === 7) console.log(' 7 is a good number also');
+else console.log("nothing works");
