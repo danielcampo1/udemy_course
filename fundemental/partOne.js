@@ -146,21 +146,38 @@ console.log("hello");
 // let johnH = 1.95
 
 
-let markW = 95  
-let markH= 1.88
-let johnW = 85
-let johnH = 1.76
+// let markW = 95  
+// let markH= 1.88
+// let johnW = 85
+// let johnH = 1.76
 
 
-const markBMI = markW / markH ** 2 
-const johnBMI = johnW / johnH ** 2 
+// const markBMI = markW / markH ** 2 
+// const johnBMI = johnW / johnH ** 2 
 
-console.log(markBMI);
-console.log(johnBMI);
+// console.log(markBMI);
+// console.log(johnBMI);
 
-if(markBMI > johnBMI){
-    console.log(`Mark's BMI is higher then Johns by ${markBMI - johnBMI}!`);
-}else{
-    console.log(`John's BMI is higher then Marks by ${johnBMI - markBMI}!`);
-};
+// if(markBMI > johnBMI){
+//     console.log(`Mark's BMI is higher then Johns by ${markBMI - johnBMI}!`);
+// }else{
+//     console.log(`John's BMI is higher then Marks by ${johnBMI - markBMI}!`);
+// };
+
+//-------------------------------------------------------------
+
+//TYPE CONVERSION AND COERCION
+
+
+//type conversion
+const inputYear = '1994';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log(Number('daniel'));
+
+//Coercion
+
+console.log('23' - '10' - 3); //converts to number
+console.log('23' + '10' + 3); // concats and converts to string
 
