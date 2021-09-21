@@ -208,14 +208,19 @@ console.log("hello");
 
 //equality operators
 
-const age = 18;
-if(age === 18) console.log('congrats your an adult'); //strict equality operator
-if(age == '18') console.log('works also with a string'); //lose equality operator
+// const age = 18;
+// if(age === 18) console.log('congrats your an adult'); //strict equality operator
+// if(age == '18') console.log('works also with a string'); //lose equality operator
 
 
-const favv = Number(prompt('what is your favorite number'))
+// const favv = Number(prompt('what is your favorite number'))
 
 
-if(favv === 23) console.log("cool! 23 is the number");
-else if(favv === 7) console.log(' 7 is a good number also');
-else console.log("nothing works");
+// if(favv === 23) console.log("cool! 23 is the number");
+// else if(favv === 7) console.log(' 7 is a good number also');
+// else console.log("nothing works");
+
+// --------------------------------------------------------------------
+
+// Boolean logic
+
