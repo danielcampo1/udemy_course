@@ -224,14 +224,14 @@ console.log("hello");
 
 // Boolean Operators
 
-const hasDriversLicense = true; //A
-const hasGoodVision = true; //B
+// const hasDriversLicense = true; //A
+// const hasGoodVision = true; //B
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
 
-const shouldDrive = hasDriversLicense && hasGoodVision;
+// const shouldDrive = hasDriversLicense && hasGoodVision;
 
 // if(hasDriversLicense && hasGoodVision){
 //     console.log('Sarah can drive');
@@ -239,12 +239,39 @@ const shouldDrive = hasDriversLicense && hasGoodVision;
 //     console.log('someone else should drive');
 // }
 
-const isTired = false// C
+// const isTired = false// C
 
-console.log(hasDriversLicense && hasGoodVision && isTired);
+// console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if(hasDriversLicense && hasGoodVision && !isTired){
-    console.log('sarah is able to drive!');
+// if(hasDriversLicense && hasGoodVision && !isTired){
+//     console.log('sarah is able to drive!');
+// }else{
+//     console.log('someone else should drive ....');
+// }
+
+//--------------------------------------------------------------------
+
+// Coding challenge #3
+
+
+//#1
+// const dolphins = (96 + 108 + 89) / 3
+// const koalas = (88 + 91 + 110) / 3
+// if(dolphins > koalas) console.log('The Dolphins won!');
+// else console.log('The Koalas won!');
+
+//#2
+const dolphins = (97 + 112 + 101) / 3
+const koalas = (109 + 95 + 123) / 3
+
+if(dolphins > koalas && dolphins >= 100){
+    console.log('Dolphins you scored over 100');
+} else if (koalas > dolphins && koalas >= 100){
+    console.log('Koalas you scored over 100');
+} else if (dolphins === koalas && dolphins >= 100 && koalas >=100) {
+    console.log('You both Win');
 }else{
-    console.log('someone else should drive ....');
+    console.log('NOBODY WINS!');
 }
+
+console.log(dolphins, koalas);
