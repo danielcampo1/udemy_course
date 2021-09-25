@@ -261,17 +261,57 @@ console.log("hello");
 // else console.log('The Koalas won!');
 
 //#2
-const dolphins = (97 + 112 + 101) / 3
-const koalas = (109 + 95 + 123) / 3
+// const dolphins = (97 + 112 + 101) / 3
+// const koalas = (109 + 95 + 123) / 3
 
-if(dolphins > koalas && dolphins >= 100){
-    console.log('Dolphins you scored over 100');
-} else if (koalas > dolphins && koalas >= 100){
-    console.log('Koalas you scored over 100');
-} else if (dolphins === koalas && dolphins >= 100 && koalas >=100) {
-    console.log('You both Win');
-}else{
-    console.log('NOBODY WINS!');
+// if(dolphins > koalas && dolphins >= 100){
+//     console.log('Dolphins you scored over 100');
+// } else if (koalas > dolphins && koalas >= 100){
+//     console.log('Koalas you scored over 100');
+// } else if (dolphins === koalas && dolphins >= 100 && koalas >=100) {
+//     console.log('You both Win');
+// }else{
+//     console.log('NOBODY WINS!');
+// }
+
+// console.log(dolphins, koalas);
+
+// --------------------------------------------------
+
+// The switch Statement
+
+const day = 'tuesday';
+
+switch(day) {
+    case 'monday': 
+        console.log('plan our course structure');
+        console.log('go to coding meetup');
+        break;
+        case 'tuesday':
+        console.log('prepare theory videos');
+        break;
+        case 'wednesday':
+        case 'thurday':
+        console.log('write code examples');
+        break;
+        case 'friday':
+            console.log('record videos');
+            break;
+        case 'saturday':
+        case 'sunday':
+            console.log('enjoy the weekend');
+        default:
+            console.log('not a vaild day');
 }
 
-console.log(dolphins, koalas);
+
+if(day === 'monday') {
+    console.log('plan our course structure');
+    console.log('go to coding meetup');
+}else if(day === 'tuesday'){
+    console.log('prepare theory videos');
+}else if(day === 'wednesday' || day === 'thursday') {
+    console.log('write code examples');
+}else{
+  console.log('not a vaild day');
+}
