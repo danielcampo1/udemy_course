@@ -280,38 +280,62 @@ console.log("hello");
 
 // The switch Statement
 
-const day = 'tuesday';
+// const day = 'tuesday';
 
-switch(day) {
-    case 'monday': 
-        console.log('plan our course structure');
-        console.log('go to coding meetup');
-        break;
-        case 'tuesday':
-        console.log('prepare theory videos');
-        break;
-        case 'wednesday':
-        case 'thurday':
-        console.log('write code examples');
-        break;
-        case 'friday':
-            console.log('record videos');
-            break;
-        case 'saturday':
-        case 'sunday':
-            console.log('enjoy the weekend');
-        default:
-            console.log('not a vaild day');
+// switch(day) {
+//     case 'monday': 
+//         console.log('plan our course structure');
+//         console.log('go to coding meetup');
+//         break;
+//         case 'tuesday':
+//         console.log('prepare theory videos');
+//         break;
+//         case 'wednesday':
+//         case 'thurday':
+//         console.log('write code examples');
+//         break;
+//         case 'friday':
+//             console.log('record videos');
+//             break;
+//         case 'saturday':
+//         case 'sunday':
+//             console.log('enjoy the weekend');
+//         default:
+//             console.log('not a vaild day');
+// }
+
+
+// if(day === 'monday') {
+//     console.log('plan our course structure');
+//     console.log('go to coding meetup');
+// }else if(day === 'tuesday'){
+//     console.log('prepare theory videos');
+// }else if(day === 'wednesday' || day === 'thursday') {
+//     console.log('write code examples');
+// }else{
+//   console.log('not a vaild day');
+// }
+
+// ---------------------------------------------------------
+
+// The Conditional(Ternary) operator
+
+const age = 23
+
+age >= 18 ? console.log('i like to drink fruits 😘') : console.log(' No, i like water'); 
+
+// operators always produce a value, and is a experssion. and
+// make that value into a variable.
+
+const drinks = age >= 18 ? 'wine 🚘': 'water💦'
+console.log(drinks);
+
+let drink2
+if(age >= 18){
+    drink2 = 'wine🍷'
+} else {
+    drink2 = 'drink💦'
 }
+console.log(drink2);
 
 
-if(day === 'monday') {
-    console.log('plan our course structure');
-    console.log('go to coding meetup');
-}else if(day === 'tuesday'){
-    console.log('prepare theory videos');
-}else if(day === 'wednesday' || day === 'thursday') {
-    console.log('write code examples');
-}else{
-  console.log('not a vaild day');
-}
