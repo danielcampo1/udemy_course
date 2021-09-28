@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
 
 // let year;
 // console.log(year);
@@ -320,22 +320,30 @@ console.log("hello");
 
 // The Conditional(Ternary) operator
 
-const age = 23
+// const age = 23
 
-age >= 18 ? console.log('i like to drink fruits 😘') : console.log(' No, i like water'); 
+// age >= 18 ? console.log('i like to drink fruits 😘') : console.log(' No, i like water'); 
 
-// operators always produce a value, and is a experssion. and
-// make that value into a variable.
+// // operators always produce a value, and is a experssion. and
+// // make that value into a variable.
 
-const drinks = age >= 18 ? 'wine 🚘': 'water💦'
-console.log(drinks);
+// const drinks = age >= 18 ? 'wine 🚘': 'water💦'
+// console.log(drinks);
 
-let drink2
-if(age >= 18){
-    drink2 = 'wine🍷'
-} else {
-    drink2 = 'drink💦'
-}
-console.log(drink2);
+// let drink2
+// if(age >= 18){
+//     drink2 = 'wine🍷'
+// } else {
+//     drink2 = 'drink💦'
+// }
+// console.log(drink2);
 
+// --------------------------------------------------------------------
 
+// Coding Challenge 4
+
+const bill = 430
+
+const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}`);
