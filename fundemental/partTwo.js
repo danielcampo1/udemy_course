@@ -83,15 +83,42 @@
 
 // Functions calling other functions
 
-function cutFruitPieces(fruit){
-    return fruit * 4
-}
+// function cutFruitPieces(fruit){
+//     return fruit * 4
+// }
 
-function fruitProcessor(apples, oranges){
-   const appliePieces = cutFruitPieces(apples);
-   const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor(apples, oranges){
+//    const appliePieces = cutFruitPieces(apples);
+//    const orangePieces = cutFruitPieces(oranges);
 
-    const juice = `Juice with ${appliePieces} apples and ${orangePieces} oranges.`;
-    return juice;
+//     const juice = `Juice with ${appliePieces} apples and ${orangePieces} oranges.`;
+//     return juice;
+// }
+//     console.log(fruitProcessor(2, 3));
+
+//-----------------------------------------------------------------
+
+// coding challenge 1
+
+const calcAverage = (score1, score2, score3) => {
+    return (score1 + score2 + score3) / 3
 }
-    console.log(fruitProcessor(2, 3));
+// data1
+// const avgDolphins = calcAverage(44,23,71)
+// const avgKoalas = calcAverage(65,54,49)
+
+// data2
+const avgDolphins = calcAverage(85,54,71)
+const avgKoalas = calcAverage(23,34,27)
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if(avgDolphins >= 2 * avgKoalas){
+        console.log(`DOLPHINS WIN!! ${avgDolphins} - ${avgKoalas}`);
+    }else if(avgKoalas >= 2 * avgDolphins){
+        console.log(`Koalas WIN!! ${avgKoalas} - ${avgKoalas}`);
+    }else{
+            console.log("rematch no winner");
+        }
+    }
+
+checkWinner(avgDolphins,avgKoalas)
