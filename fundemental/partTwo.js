@@ -100,25 +100,42 @@
 
 // coding challenge 1
 
-const calcAverage = (score1, score2, score3) => {
-    return (score1 + score2 + score3) / 3
-}
-// data1
-// const avgDolphins = calcAverage(44,23,71)
-// const avgKoalas = calcAverage(65,54,49)
+// const calcAverage = (score1, score2, score3) => {
+//     return (score1 + score2 + score3) / 3
+// }
+// // data1
+// // const avgDolphins = calcAverage(44,23,71)
+// // const avgKoalas = calcAverage(65,54,49)
 
-// data2
-const avgDolphins = calcAverage(85,54,71)
-const avgKoalas = calcAverage(23,34,27)
+// // data2
+// const avgDolphins = calcAverage(85,54,71)
+// const avgKoalas = calcAverage(23,34,27)
 
-function checkWinner(avgDolphins, avgKoalas) {
-    if(avgDolphins >= 2 * avgKoalas){
-        console.log(`DOLPHINS WIN!! ${avgDolphins} - ${avgKoalas}`);
-    }else if(avgKoalas >= 2 * avgDolphins){
-        console.log(`Koalas WIN!! ${avgKoalas} - ${avgKoalas}`);
-    }else{
-            console.log("rematch no winner");
-        }
-    }
+// function checkWinner(avgDolphins, avgKoalas) {
+//     if(avgDolphins >= 2 * avgKoalas){
+//         console.log(`DOLPHINS WIN!! ${avgDolphins} - ${avgKoalas}`);
+//     }else if(avgKoalas >= 2 * avgDolphins){
+//         console.log(`Koalas WIN!! ${avgKoalas} - ${avgKoalas}`);
+//     }else{
+//             console.log("rematch no winner");
+//         }
+//     }
 
-checkWinner(avgDolphins,avgKoalas)
+// checkWinner(avgDolphins,avgKoalas)
+
+//----------------------------------------------------------------
+
+// Intro to Arrays
+
+const friend1 = 'sergio'
+const friend2 = 'miguel'
+const friend3 = 'jackie'
+
+const friends = ['sergio', 'miguel', 'jackie'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length -1]);
+
+const years = new Array(1993,1991,1994,2020)
+console.log(years);
