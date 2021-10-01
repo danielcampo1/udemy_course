@@ -144,24 +144,56 @@
 
 // Basic array operations(methods)
 
-const friends = ['sergio', 'miguel', 'jackie'];
+// const friends = ['sergio', 'miguel', 'jackie'];
 
-//add elements
-const newLength = friends.push('jay') 
-console.log(friends);
-console.log(newLength);
+// //add elements
+// const newLength = friends.push('jay') 
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift('john')
-console.log(friends);
+// friends.unshift('john')
+// console.log(friends);
 
-//remove elements
-const popped = friends.pop() //last E
-console.log(friends);
-console.log(popped);
+// //remove elements
+// const popped = friends.pop() //last E
+// console.log(friends);
+// console.log(popped);
 
-friends.shift()
-console.log(friends);
+// friends.shift()
+// console.log(friends);
 
-console.log(friends.indexOf('jackie'));
+// console.log(friends.indexOf('jackie'));
 
-console.log(friends.includes('jackie'))
+// console.log(friends.includes('jackie'))
+
+// ----------------------------------------------------------------------
+
+// coding challenge #2
+
+let bills = [125,555,44]
+
+
+let tips = []
+let total = []
+
+const calcTip = (bill) => {
+    const tip = bill <= 300 && bill >= 50 ? bill *.15 : bill * .2
+    tips.push(tip)
+    console.log(tips);
+    total.push(bill + tip)
+    console.log('total:',total);
+}
+
+calcTip(bills[0])
+calcTip(bills[1])
+calcTip(bills[2])
+
+
+//instructor V
+const calctip = function(bill){
+    return bill <= 300 && bill >= 50 ? bill *.15 : bill * .2
+}
+
+const tips = [calctip(bills[0]), calctip(bills[1]), calctip(bills[2])]
+const totals = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]]
+console.log(bills, tips, totals);
