@@ -127,15 +127,41 @@
 
 // Intro to Arrays
 
-const friend1 = 'sergio'
-const friend2 = 'miguel'
-const friend3 = 'jackie'
+// const friend1 = 'sergio'
+// const friend2 = 'miguel'
+// const friend3 = 'jackie'
+
+// const friends = ['sergio', 'miguel', 'jackie'];
+// console.log(friends);
+// console.log(friends[0]);
+// console.log(friends.length);
+// console.log(friends[friends.length -1]);
+
+// const years = new Array(1993,1991,1994,2020)
+// console.log(years);
+
+//---------------------------------------------------------------------
+
+// Basic array operations(methods)
 
 const friends = ['sergio', 'miguel', 'jackie'];
-console.log(friends);
-console.log(friends[0]);
-console.log(friends.length);
-console.log(friends[friends.length -1]);
 
-const years = new Array(1993,1991,1994,2020)
-console.log(years);
+//add elements
+const newLength = friends.push('jay') 
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('john')
+console.log(friends);
+
+//remove elements
+const popped = friends.pop() //last E
+console.log(friends);
+console.log(popped);
+
+friends.shift()
+console.log(friends);
+
+console.log(friends.indexOf('jackie'));
+
+console.log(friends.includes('jackie'))
