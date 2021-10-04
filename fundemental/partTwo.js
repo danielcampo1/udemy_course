@@ -202,7 +202,7 @@
 
 // Intro to objects
 
-const jonas = {
+const daniel = {
     firstName: 'Daniel',
     lastName: 'Campo',
     age: 2040-1994,
@@ -210,3 +210,31 @@ const jonas = {
     friends: ['jackie', 'sergio', 'miguel']
 }
 
+console.log(daniel);
+
+console.log(daniel.lastName);
+console.log(daniel['lastName']);
+
+const nameKey = 'Name';
+console.log(daniel['first' + nameKey]);
+console.log(daniel['last' + nameKey]);
+
+// const interestedIn = prompt('What do you want to know about Daniel? Choose between First or last name, age, job, and Friends');
+
+// if(daniel[interestedIn]){
+//     console.log(daniel[interestedIn]);
+// }else{
+//     console.log('Woops you messed up, please refresh and try again.');
+// }
+
+daniel.location = 'Austin,TX';
+daniel['instagram'] = '@danielcampo1';
+console.log(daniel);
+
+const danielsFriends = prompt(`Daniel has daniel ${daniel.friends.length}, and his best friend is??`);
+
+if(danielsFriends === daniel.friends[0]){
+    console.log(`YAY you are right Jackie is correct`);
+}else{
+    console.log('oooofff nice try! try again');
+}
