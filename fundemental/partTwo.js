@@ -170,30 +170,43 @@
 
 // coding challenge #2
 
-let bills = [125,555,44]
+// let bills = [125,555,44]
 
 
-let tips = []
-let total = []
+// let tips = []
+// let total = []
 
-const calcTip = (bill) => {
-    const tip = bill <= 300 && bill >= 50 ? bill *.15 : bill * .2
-    tips.push(tip)
-    console.log(tips);
-    total.push(bill + tip)
-    console.log('total:',total);
+// const calcTip = (bill) => {
+//     const tip = bill <= 300 && bill >= 50 ? bill *.15 : bill * .2
+//     tips.push(tip)
+//     console.log(tips);
+//     total.push(bill + tip)
+//     console.log('total:',total);
+// }
+
+// calcTip(bills[0])
+// calcTip(bills[1])
+// calcTip(bills[2])
+
+
+// //instructor V
+// const calctip = function(bill){
+//     return bill <= 300 && bill >= 50 ? bill *.15 : bill * .2
+// }
+
+// const tips = [calctip(bills[0]), calctip(bills[1]), calctip(bills[2])]
+// const totals = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]]
+// console.log(bills, tips, totals);
+
+//-----------------------------------------------------------------------
+
+// Intro to objects
+
+const jonas = {
+    firstName: 'Daniel',
+    lastName: 'Campo',
+    age: 2040-1994,
+    job: 'TSO',
+    friends: ['jackie', 'sergio', 'miguel']
 }
 
-calcTip(bills[0])
-calcTip(bills[1])
-calcTip(bills[2])
-
-
-//instructor V
-const calctip = function(bill){
-    return bill <= 300 && bill >= 50 ? bill *.15 : bill * .2
-}
-
-const tips = [calctip(bills[0]), calctip(bills[1]), calctip(bills[2])]
-const totals = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]]
-console.log(bills, tips, totals);
