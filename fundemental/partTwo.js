@@ -201,7 +201,7 @@
 //-----------------------------------------------------------------------
 
 // Intro to objects
-
+/*
 const daniel = {
     firstName: 'Daniel',
     lastName: 'Campo',
@@ -219,13 +219,13 @@ const nameKey = 'Name';
 console.log(daniel['first' + nameKey]);
 console.log(daniel['last' + nameKey]);
 
-// const interestedIn = prompt('What do you want to know about Daniel? Choose between First or last name, age, job, and Friends');
+const interestedIn = prompt('What do you want to know about Daniel? Choose between First or last name, age, job, and Friends');
 
-// if(daniel[interestedIn]){
-//     console.log(daniel[interestedIn]);
-// }else{
-//     console.log('Woops you messed up, please refresh and try again.');
-// }
+if(daniel[interestedIn]){
+    console.log(daniel[interestedIn]);
+}else{
+    console.log('Woops you messed up, please refresh and try again.');
+}
 
 daniel.location = 'Austin,TX';
 daniel['instagram'] = '@danielcampo1';
@@ -238,3 +238,71 @@ if(danielsFriends === daniel.friends[0]){
 }else{
     console.log('oooofff nice try! try again');
 }
+*/
+
+// --------------------------------------------------------------------
+
+// OBj methods
+
+// functions are values & methods are properties
+/*
+const daniel = {
+    firstName: 'Daniel',
+    lastName: 'Campo',
+    birthYear: 1994,
+    job: 'TSO',
+    friends: ['jackie', 'sergio', 'miguel'],
+    hasDriversLicense: false,
+
+    // calcAge: function(birthYear) {
+    //     return 2040 - birthYear
+    // }
+
+    calcAge: function() {
+        this.age = 2040 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function() {
+        return `${daniel.firstName} is a ${daniel.calcAge()} years old teacher. and he has ${this.hasDriversLicense ? 'a' : 'no' } drivers licences.`
+    }
+};
+
+
+console.log(daniel.calcAge())
+// console.log(daniel['calcAge'](1994))
+console.log(daniel.getSummary());
+
+
+//Challenge
+// jonas is a 46 year old techer. and he has a/no drivers licenses
+*/
+
+// -------------------------------------------------------------------
+
+//challenge 3
+
+const Mark = {
+    fullName: 'mark miller',
+    weight: 78,
+    height: 1.69,
+    calcBmi: function() {
+        this.BMI = this.weight / this.height ** 2
+        return this.BMI
+    }
+}
+
+const John = {
+    fullName: 'John SMith',
+    weight: 92,
+    height: 1.95,
+    calcBmi: function() {
+        this.BMI = this.weight / this.height ** 2
+        return this.BMI
+    }
+}
+
+console.log(Mark.calcBmi());
+console.log(John.calcBmi());
+
+console.log(`${Mark.fullName} has a BMI of ${Math.round(Mark.BMI)} & ${John.fullName} has a BMI of ${Math.round(John.BMI)}`);
