@@ -281,7 +281,7 @@ console.log(daniel.getSummary());
 // -------------------------------------------------------------------
 
 //challenge 3
-
+/*
 const Mark = {
     fullName: 'mark miller',
     weight: 78,
@@ -306,3 +306,13 @@ console.log(Mark.calcBmi());
 console.log(John.calcBmi());
 
 console.log(`${Mark.fullName} has a BMI of ${Math.round(Mark.BMI)} & ${John.fullName} has a BMI of ${Math.round(John.BMI)}`);
+*/
+
+// -----------------------------------------------------------------------------
+
+// Loops
+
+// For loop keeps running while condition is true.
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lift weights repetition ${rep} 🏋️‍♂️`);
+}
