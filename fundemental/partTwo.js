@@ -316,6 +316,7 @@ console.log(`${Mark.fullName} has a BMI of ${Math.round(Mark.BMI)} & ${John.full
 // for(let rep = 1; rep <= 10; rep++) {
 //     console.log(`Lift weights repetition ${rep} 🏋️‍♂️`);
 // }
+/* 
 
 const daniel = [
     'Daniel',
@@ -367,3 +368,28 @@ for(let i = 0; i < daniel.length; i++) {
     console.log(daniel[i], typeof daniel[i]);
 
 }
+
+--------------------------- */
+
+//looping backwards
+
+const daniel = [
+    'Daniel',
+    'Campo',
+    2040-1993,
+    'TSO',
+    ['jackie','miguel','clairssa'],
+    true
+];
+
+for(let i = daniel.length - 1; i >= 0; i--) {
+    console.log(i, daniel[i]);
+}
+
+for(let exercise = 1; exercise < 4; exercise++){
+    console.log(`----starting exercise ${exercise}` );
+
+    for(let rep = 1; rep < 6; rep++){
+        console.log(`${exercise}: Lifting weight repetition ${rep}`);
+    }
+ }
