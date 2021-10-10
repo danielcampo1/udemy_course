@@ -401,6 +401,7 @@ for(let exercise = 1; exercise < 4; exercise++){
 //  for(let rep = 1; rep <= 10; rep++){
 //     console.log(`Lifting weight repetition ${rep}`);
 // }
+/* 
 
 let rep = 1
 while(rep <=10){
@@ -416,3 +417,27 @@ while (dice !== 6){
     dice = Math.trunc(Math.random() * 6) + 1
     if(dice === 6 )console.log('Loop is about to end ...');
 }
+
+-------------------------------------*/
+
+//challenge #4
+
+const bills = [ 22,295,176,440,37,105,10,1100,86,52 ]
+
+let tips = []
+let total = []
+
+
+const calcTip = (bill) => {
+    const tip = bill <= 300 && bill >= 50 ? bill *.15 : bill * .2
+    tips.push(tip)
+    total.push(bill + tip)
+}
+
+
+for(let i = 0; i < bills.length; i++){
+    calcTip(bills[i])
+}
+
+console.log(tips);
+console.log('totals:', total);
