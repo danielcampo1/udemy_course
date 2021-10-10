@@ -313,6 +313,57 @@ console.log(`${Mark.fullName} has a BMI of ${Math.round(Mark.BMI)} & ${John.full
 // Loops
 
 // For loop keeps running while condition is true.
-for(let rep = 1; rep <= 10; rep++) {
-    console.log(`Lift weights repetition ${rep} 🏋️‍♂️`);
+// for(let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lift weights repetition ${rep} 🏋️‍♂️`);
+// }
+
+const daniel = [
+    'Daniel',
+    'Campo',
+    2040-1993,
+    'TSO',
+    ['jackie','miguel','clairssa'],
+    true
+];
+
+const types = [];
+
+
+for(let i = 0; i < daniel.length; i++) {
+    //reading daniel array
+    console.log(daniel[i], typeof daniel[i]);
+
+    //filling types array
+    types[i] = typeof daniel[i]
+}
+
+console.log(types);
+
+const years = [ 1993,1997,2019,2021,1969 ]
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+    ages.push(2040 - years[i])
+}
+
+console.log(ages);
+
+// continue and break
+//  continue - exit current iteration of the loop and continue to the next onemptied.length
+//  break - completely terminate the loop
+
+console.log('-----only strings-----');
+for(let i = 0; i < daniel.length; i++) {
+    if(typeof daniel[i] !== 'string') continue;
+
+    console.log(daniel[i], typeof daniel[i]);
+
+}
+
+console.log('-----only numbers-----');
+for(let i = 0; i < daniel.length; i++) {
+    if(typeof daniel[i] === 'number') break;
+
+    console.log(daniel[i], typeof daniel[i]);
+
 }
