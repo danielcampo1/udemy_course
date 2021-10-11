@@ -1,7 +1,7 @@
 // Scrict Mode
 // strict mode helps create errors for us to see. and forbids us to do stuff.
 
-'use strict';
+"use strict";
 
 // let hasDriversLicense = false;
 // const passTest = true;
@@ -18,9 +18,9 @@
 // functions
 
 // what is a function??
-    // is a variable but a chunk of code that can be recalled
-    // functions can recieve data and return data.
-    
+// is a variable but a chunk of code that can be recalled
+// functions can recieve data and return data.
+
 // function logger() {
 //     console.log('My name is Daniel!');
 // }
@@ -147,7 +147,7 @@
 // const friends = ['sergio', 'miguel', 'jackie'];
 
 // //add elements
-// const newLength = friends.push('jay') 
+// const newLength = friends.push('jay')
 // console.log(friends);
 // console.log(newLength);
 
@@ -172,7 +172,6 @@
 
 // let bills = [125,555,44]
 
-
 // let tips = []
 // let total = []
 
@@ -187,7 +186,6 @@
 // calcTip(bills[0])
 // calcTip(bills[1])
 // calcTip(bills[2])
-
 
 // //instructor V
 // const calctip = function(bill){
@@ -396,7 +394,7 @@ for(let exercise = 1; exercise < 4; exercise++){
  }
  -----------------------------------*/
 
- //while loop
+//while loop
 
 //  for(let rep = 1; rep <= 10; rep++){
 //     console.log(`Lifting weight repetition ${rep}`);
@@ -421,7 +419,7 @@ while (dice !== 6){
 -------------------------------------*/
 
 //challenge #4
-
+/* 
 const bills = [ 22,295,176,440,37,105,10,1100,86,52 ]
 
 let tips = []
@@ -440,4 +438,6 @@ for(let i = 0; i < bills.length; i++){
 }
 
 console.log(tips);
-console.log('totals:', total);
+console.log('totals:', total); 
+
+*/
